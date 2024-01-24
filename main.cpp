@@ -12,13 +12,13 @@ int main()
     int fishCount = 0;
     int total = 0;
 
-    ofstream fileOut ("C:\\develop\\test\\build\\modul_20_task_3\\basket.txt", ios::app);
+    ofstream fileOut ("basket.txt", ios::app);
     if (!fileOut.is_open())
     {
         cerr << "Error, basket file is not open";
         return 1;
     }
-    ifstream fileIn ("C:\\develop\\test\\build\\modul_20_task_3\\river.txt");
+    ifstream fileIn ("river.txt");
     if (!fileIn.is_open())
     {
         cerr << "Error, river file is not open";
